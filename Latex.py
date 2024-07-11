@@ -4,7 +4,6 @@ class Formula(Scene):
 
     def construct(self):
         t = MathTex(r"\sum_{i=1} ^{\infty} x^i \prod_{j=1} ^{a} (i+j)", color = BLUE)
-        # line = Line(RIGHT, LEFT, color = BLACK)
         t.generate_target()
         t.target.shift(2*UP + 3*LEFT)
         self.play(Create(t))
